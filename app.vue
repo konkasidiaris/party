@@ -6,11 +6,10 @@
         PARTY
       </div>
       <div class="text main">
-        <ul>
-          <li>Helena provides the house</li>
-          <li>Heleni provides the drinks</li>
-          <li>Konstantinos is on the music</li>
-        </ul>
+        <p>
+          Motive: we want to party <br />Excuse: our name day <br />We will got
+          some booze but the more the merrier
+        </p>
       </div>
       <div class="text">
         <ul>
@@ -20,8 +19,8 @@
           <li>smack your bitch up</li>
         </ul>
       </div>
-      <div class="text">when: Saturday, 21st of May</div>
-      <div class="text">where: Helena's house, more info on text</div>
+      <div class="text">Saturday, 21st of May</div>
+      <div class="text">Helena's house, more info on text</div>
     </div>
   </div>
 </template>
@@ -63,9 +62,10 @@ ul {
   text-align: center;
   color: white;
   font-size: 200%;
+  z-index: 1;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -76,14 +76,15 @@ ul {
 
 .container::after {
   content: "";
-  position: absolute;
   bottom: 0;
   left: 0;
-  height: 50%;
+  height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, rgba(37,32,30, 0), rgba(37,32,30, 100));
+  background: linear-gradient(180deg, rgba(37, 32, 30), rgba(37, 32, 30) 100%);
+  opacity: 0.4;
   mix-blend-mode: multiply;
-  opacity: 1;
+  position: absolute;
+  z-index: 0;
 }
 
 .title {
