@@ -1,10 +1,21 @@
 <template>
   <div id="main">
-    <div class="text title ">ΒΑΛΕ PRODIGY!<br> PARTY</div>
-    <div class="text main">Η Έλενα βάζει το σπίτι (την πιάσαμε κότσο), η Ελένη τα ποτά (μερικά) και ο Κωνσταντίνος
-      μουσική (βασικά PRODIGY)
+    <div class="text title ">VALE PRODIGY!<br> PARTY</div>
+    <div class="text main">
+      <ul>
+        <li>Helena provides the house</li>
+        <li>Heleni provides the drinks</li>
+        <li>Konstantinos is on the music</li>
+      </ul>
     </div>
-    <div class="text info">Πληροφορίες από αυτόν που σου έστειλε το link</div>
+    <div class="text info">Be ready to:
+     <ul>
+        <li>drink</li>
+        <li>party</li>
+        <li>dance to Prodigy</li>
+        <li>smack your bitch up</li>
+      </ul> 
+    </div>
   </div>
 </template>
 <style>
@@ -13,13 +24,17 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: thePartyFont;
+}
+
+@font-face {
+  font-family: "thePartyFont";
+  src: url("./assets/party-font.ttf");
 }
 
 #main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-end;
+  display:block;
+  box-sizing: border-box;
   background-image: url("./assets/background.webp");
   background-position: center center;
   background-repeat: no-repeat;
@@ -48,11 +63,11 @@ body {
 }
 
 .info {
-  font-size: x-small;
+  font-size: large;
 }
 
 .title {
-  font-size: x-large;
+  font-size: xx-large;
   color: #79112b;
   font-weight: bolder;
 }
